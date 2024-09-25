@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TicketList">
+
+    <RelativeLayout
+        android:id="@+id/header_layer"
+        android:layout_width="match_parent"
+        android:background="@drawable/das_head_border"
+        android:layout_marginBottom="25dp"
+        android:paddingBottom="7dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY Tickets"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/back_btn"
+            android:fontFamily="@font/urbanistbold"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="14dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/no_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/no_tkt_bg"
+        android:visibility="gone"
+        android:layout_marginTop="110dp"/>
+
+    <TextView
+        android:id="@+id/no_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oops! Have no Book Any Ticket"
+        android:textSize="20dp"
+        android:layout_below="@+id/no_img"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginVertical="20dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_layer"
+        android:id="@+id/rvLIst"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_vr"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:tint="#9AFF0E"
+                android:src="@drawable/ic_check_circle"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/mtch_nm_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Successful"
+                android:textSize="15dp"
+                android:layout_marginHorizontal="12dp"
+                android:fontFamily="@font/urbanistmedium"
+                android:layout_below="@+id/img_vr"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/blackmid"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congrats Your Ticket has Booked"
+                android:textSize="16dp"
+                android:layout_marginHorizontal="12dp"
+                android:fontFamily="@font/urbanistmedium"
+                android:layout_below="@+id/mtch_nm_txt"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/lightblue"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

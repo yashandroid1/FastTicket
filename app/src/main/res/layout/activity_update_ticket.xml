@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UpdateTicket">
+
+    <RelativeLayout
+        android:id="@+id/header_layer"
+        android:layout_width="match_parent"
+        android:background="@drawable/das_head_border"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="7dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/h_sr_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reschedule or Change Tickets"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/back_btn"
+            android:fontFamily="@font/urbanistsemibold"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="14dp"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imgee"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:alpha="6"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_update_tkt"/>
+
+
+    <LinearLayout
+        android:id="@+id/tkt_dtl_lyr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imgee">
+
+        <LinearLayout
+            android:id="@+id/name_lyr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textSize="15dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="33dp"/>
+
+
+            <EditText
+                android:id="@+id/name_txt"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/urbanistmedium"
+                android:layout_marginLeft="25dp"
+                android:hint="Enter Name"
+                android:textColorHint="#888887"
+                android:background="@drawable/ed_bg"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rason_lyr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textSize="15dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="33dp"/>
+
+
+            <EditText
+                android:id="@+id/reason_txt"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/urbanistmedium"
+                android:layout_marginLeft="25dp"
+                android:hint="Enter Name  (Description)"
+                android:textColorHint="#888887"
+                android:background="@drawable/ed_bg"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/priorty_lyr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Priority"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textSize="15dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="33dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/ed_bg"
+                android:padding="12dp">
+
+                <Spinner
+                    android:id="@+id/priorty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/dropdown_icon"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/urbanistmedium"
+                    android:hint="Enter Name (Description)"
+                    android:textColorHint="#888887"
+                    android:background="@android:color/transparent" />
+
+                <ImageView
+                    android:id="@+id/dropdown_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_dropdown" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dty_lyr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/urbanistmedium"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/darkble"
+                android:text="Select Date"
+                android:drawableLeft="@drawable/ic_calndr"
+                android:drawablePadding="8dp"
+                android:background="@drawable/ed_bg"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Ticket"
+        android:layout_marginTop="25dp"
+        android:paddingVertical="13dp"
+        android:fontFamily="@font/urbanistsemibold"
+        app:cornerRadius="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="42dp"
+        android:layout_below="@+id/tkt_dtl_lyr"
+        android:backgroundTint="@color/dark_gry"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TicketsDetails">
+
+    <RelativeLayout
+        android:id="@+id/header_layer"
+        android:layout_width="match_parent"
+        android:background="@drawable/das_head_border"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="7dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/h_sr_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket  Details"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/back_btn"
+            android:fontFamily="@font/urbanistsemibold"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="14dp"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/tkt_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_ticket"
+                android:layout_margin="15dp"/>
+
+           <TextView
+               android:id="@+id/tkt_id"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Ticket -  578967"
+               android:fontFamily="@font/urbanistregular"
+               android:layout_toRightOf="@+id/tkt_img"
+               android:layout_marginTop="15dp"
+               android:textSize="20dp"
+               android:layout_marginHorizontal="15dp"
+               android:textColor="#FF5858"/>
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yash Kumar"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textColor="@color/dark_gry"
+                android:layout_alignParentRight="true"
+                android:textSize="16dp"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/reason_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I want to be a Good Developer"
+                android:fontFamily="@font/urbanistmedium"
+                android:layout_marginHorizontal="15dp"
+                android:layout_below="@+id/tkt_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="32dp"
+                android:textColor="@color/dark_gry"/>
+
+            <TextView
+                android:id="@+id/priority_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"
+                android:textSize="14dp"
+                android:textColor="#1C6CFF"
+                android:layout_below="@+id/reason_txt"
+                android:fontFamily="@font/urbanistregular"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_priority"
+                android:drawablePadding="9dp"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:id="@+id/priorityy_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"
+                android:textSize="14dp"
+                android:textColor="#1C6CFF"
+                android:layout_below="@+id/reason_txt"
+                android:fontFamily="@font/urbanistregular"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/ic_priority"
+                android:drawablePadding="9dp"
+                android:layout_marginVertical="10dp"/>
+
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 Sep - 2024"
+                android:textSize="14dp"
+                android:textColor="#1C6CFF"
+                android:layout_below="@+id/reason_txt"
+                android:fontFamily="@font/urbanistregular"
+                android:layout_marginLeft="20dp"
+                android:drawableLeft="@drawable/ic_calendr_blue"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="9dp"
+                android:layout_marginVertical="10dp"/>
+
+
+            <Button
+                android:id="@+id/update_tkt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:text="Update Tickets"
+                android:fontFamily="@font/urbanistmedium"
+                android:layout_marginBottom="15dp"
+               android:layout_marginTop="180dp"
+                android:backgroundTint="@color/lightblue"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

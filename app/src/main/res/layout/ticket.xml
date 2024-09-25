@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:elevation="4dp"
+    android:layout_marginVertical="10dp"
+    app:cardElevation="5dp"
+    android:layout_marginHorizontal="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:id="@+id/ic_tkt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_ticket"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/tkt_bg"
+            android:padding="9dp"/>
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yash Kumar"
+            android:fontFamily="@font/urbanistsemibold"
+            android:textColor="#3B3B3D"
+            android:layout_toRightOf="@id/ic_tkt"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"/>
+
+        <TextView
+            android:id="@+id/priority_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High"
+            android:textSize="14dp"
+            android:textColor="#1C6CFF"
+            android:layout_below="@+id/name_txt"
+            android:fontFamily="@font/urbanistregular"
+            android:layout_marginLeft="72dp"
+            android:drawableLeft="@drawable/ic_priority"
+            android:drawablePadding="9dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:background="@drawable/cancel_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="35dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/urbanistmedium"
+            android:textSize="15dp"
+            android:layout_marginRight="8dp"
+            android:lineSpacingExtra="0.1dp"
+            android:textColor="#F44254"
+            android:layout_marginVertical="7dp"/>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/brd"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="#FF4D4D"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_below="@+id/date_txt"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:layout_below="@+id/brd"
+            android:textColor="@color/redlight"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:paddingVertical="1dp"
+            android:fontFamily="@font/urbanistmedium"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
